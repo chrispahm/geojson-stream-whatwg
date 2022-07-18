@@ -1,0 +1,18 @@
+{
+  "name": "geojson-stream-whatwg",
+  "version": "1.0.0",
+  "description": "stream features into and out of geojson",
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "scripts": {
+    "test": "tap test/*.mjs"
+  },
+  "author": "Christoph Pahmeyer <christoph.pahmeyer@uni-bonn.de>",
+  "license": "MIT",
+  "dependencies": {
+    "@streamparser/json": "^0.0.7"
+  },
+  "devDependencies": {
+    "tap": "^16.3.0"
+  }
+}
