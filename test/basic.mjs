@@ -4,7 +4,7 @@ import { open } from 'node:fs/promises';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { concatArray, concatString, arrayToStream } from './utils/helpers.mjs'
-import geojsonStream from '../src/index.mjs'
+import geojsonStream from '../dist/geojson-stream-whatwg.es.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
