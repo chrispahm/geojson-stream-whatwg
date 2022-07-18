@@ -2,9 +2,21 @@
   "name": "geojson-stream-whatwg",
   "version": "1.0.0",
   "description": "stream features into and out of geojson, using the streams api.",
-  "main": "src/index.mjs",
-  "module": "src/index.mjs",
+  "type": "module",
+  "source": "src/main.mjs",
+  "umd:main": "dist/geojson-stream-whatwg.umd.js",
+  "unpkg": "dist/geojson-stream-whatwg.umd.js",
+  "browser": "dist/geojson-stream-whatwg.umd.js",
+  "jsdelivr": "dist/geojson-stream-whatwg.umd.js",
+  "module": "dist/geojson-stream-whatwg.es.mjs",
+  "main": "dist/geojson-stream-whatwg.cjs.js",
+  "exports": {
+    "require": "./dist/geojson-stream-whatwg.cjs.js",
+    "default": "./dist/geojson-stream-whatwg.es.mjs"
+  },
+  "node": ">=14.16",
   "scripts": {
+    "build": "rollup -c",
     "test": "tap test/*.mjs"
   },
   "author": "Christoph Pahmeyer <christoph.pahmeyer@uni-bonn.de>",
@@ -13,6 +25,9 @@
     "@streamparser/json": "^0.0.7"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.77.0",
     "tap": "^16.3.0"
   }
 }
