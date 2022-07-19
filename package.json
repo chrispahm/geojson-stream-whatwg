@@ -1,6 +1,6 @@
 {
   "name": "geojson-stream-whatwg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "stream features into and out of geojson, using the streams api.",
   "type": "module",
   "source": "src/main.mjs",
