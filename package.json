@@ -19,6 +19,13 @@
     "build": "rollup -c",
     "test": "tap test/*.mjs"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrispahm/geojson-stream-whatwg.git"
+  },
+  "bugs": {
+    "url": "http://github.com/chrispahm/geojson-stream-whatwg/issues"
+  },
   "author": "Christoph Pahmeyer <christoph.pahmeyer@uni-bonn.de>",
   "license": "MIT",
   "dependencies": {
